@@ -39,7 +39,7 @@ cat1.products.create!({
   name:  'Men\'s Classy shirt',
   description: Faker::Hipster.paragraph(4),
   image: open_asset('apparel1.jpg'),
-  quantity: 0,
+  quantity: 10,
   price: 64.99
 })
 
@@ -55,7 +55,7 @@ cat1.products.create!({
   name:  'Hipster Hat',
   description: Faker::Hipster.paragraph(4),
   image: open_asset('apparel3.jpg'),
-  quantity: 4,
+  quantity: 0,
   price: 34.49
 })
 
@@ -63,7 +63,7 @@ cat1.products.create!({
   name:  'Hipster Socks',
   description: Faker::Hipster.paragraph(4),
   image: open_asset('apparel4.jpg'),
-  quantity: 0,
+  quantity: 8,
   price: 25.00
 })
 
@@ -88,7 +88,7 @@ cat2.products.create!({
   name:  'Modern Skateboards',
   description: Faker::Hipster.paragraph(4),
   image: open_asset('electronics1.jpg'),
-  quantity: 0,
+  quantity: 40,
   price: 164.49
 })
 
@@ -96,7 +96,7 @@ cat2.products.create!({
   name:  'Hotdog Slicer',
   description: Faker::Hipster.paragraph(4),
   image: open_asset('electronics2.jpg'),
-  quantity: 0,
+  quantity: 3,
   price: 26.00
 })
 
@@ -128,7 +128,7 @@ cat3.products.create!({
   name:  'Red Bookshelf',
   description: Faker::Hipster.paragraph(4),
   image: open_asset('furniture3.jpg'),
-  quantity: 0,
+  quantity: 23,
   price: 2_483.75
 })
 
