@@ -1,16 +1,9 @@
 <section class="cart-show">
 
+<% if !enhanced_cart.empty? %>
   <header class="page-header">
     <h1>My Cart</h1>
   </header>
-
-  <% if enhanced_cart.empty? %>
-
-  <div class="alert alert-warning">
-    <p>You have an empty cart. Back to <%= link_to 'products page', :root %>.</p>
-  </div>
-
-  <% else %>
 
   <div class="panel panel-default items">
     <table class="table table-bordered">
@@ -57,6 +50,7 @@
     </div>
   </div>
 
-  <% end %>
-
+<% else %>
+<%= link_to 'Cart is Empty. Return to Home!', {controller: 'products'}, class: 'alert alert-success' %>
+<% end %>
 </section>
